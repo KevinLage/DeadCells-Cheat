@@ -184,15 +184,15 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 	ImGui::SliderInt("Teleport Range", &range, 0.0, 20.0f);
 	ImGui::InputInt("Money", &money_input);
 	ImGui::InputInt("Cells", &cells_input);
-	ImGui::InputInt("Helth", &helth_input);
+	ImGui::InputInt("Health", &helth_input);
 	ImGui::InputInt("Max Health", &max_helth_input);
 	ImGui::CheckboxFlags("GodMode", (unsigned int *)&godmode, ImGuiBackendFlags_HasGamepad);
-	ImGui::CheckboxFlags("Ammo", (unsigned int *)&ammo_input, ImGuiBackendFlags_HasGamepad);
+	ImGui::CheckboxFlags("Ammunition", (unsigned int *)&ammo_input, ImGuiBackendFlags_HasGamepad);
 	ImGui::CheckboxFlags("AutoClicker", (unsigned int *)&autoclicker, ImGuiBackendFlags_HasGamepad);
 	if (ImGui::Button("Update")) {
 		changed = true;
 	}
-	if (ImGui::Button("Panic")) {
+	if (ImGui::Button("PanicMode")) {
 		kiero::shutdown();
 		return oPresent(pSwapChain, SyncInterval, Flags);
 	}
