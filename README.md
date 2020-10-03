@@ -1,7 +1,7 @@
 # DeadCells-Cheat
-Simple copy &amp; pasted Dead cells cheat
+Simple copy &amp; paste Dead Cells cheat.
 
-Use the arrow keys for the Teleport
+Use the arrow keys for the teleport cheat.
 
 
-The "Cheat" will might crash if you inject it before the game loaded or you restart it
+The "cheat" will might crash if you inject it, before the game loaded or you restart it.
